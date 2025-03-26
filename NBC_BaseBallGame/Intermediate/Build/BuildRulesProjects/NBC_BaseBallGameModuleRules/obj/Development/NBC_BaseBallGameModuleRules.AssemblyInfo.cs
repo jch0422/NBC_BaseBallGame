@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NBC_BaseBallGameModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0074583fb7fd18249d113b4b9ee01a1e1bf191d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+734420edba66a07d9e730b89219519874069ba49")]
 [assembly: System.Reflection.AssemblyProductAttribute("NBC_BaseBallGameModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NBC_BaseBallGameModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

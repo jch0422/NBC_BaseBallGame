@@ -11,6 +11,7 @@
     <None Include="..\..\Source\NBC_BaseBallGameEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -37,6 +38,30 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\NBC_BaseBallGame\NBC_BaseBallGame.h">
       <Filter>Source\NBC_BaseBallGame</Filter>
+    </ClCompile>
+    <Filter Include="Source\NBC_BaseBallGame\Private">
+      <UniqueIdentifier>{5DE6A470-04E6-31CF-80F7-59EDBB1EF160}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\NBC_BaseBallGame\Private\BaseBallGameModeBase.cpp">
+      <Filter>Source\NBC_BaseBallGame\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NBC_BaseBallGame\Private\BaseBallGameStateBase.cpp">
+      <Filter>Source\NBC_BaseBallGame\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NBC_BaseBallGame\Private\BaseBallPlayerController.cpp">
+      <Filter>Source\NBC_BaseBallGame\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\NBC_BaseBallGame\Public">
+      <UniqueIdentifier>{11C859A7-C2C8-3879-9397-CA96CAB31E15}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\NBC_BaseBallGame\Public\BaseBallGameModeBase.h">
+      <Filter>Source\NBC_BaseBallGame\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NBC_BaseBallGame\Public\BaseBallGameStateBase.h">
+      <Filter>Source\NBC_BaseBallGame\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NBC_BaseBallGame\Public\BaseBallPlayerController.h">
+      <Filter>Source\NBC_BaseBallGame\Public</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

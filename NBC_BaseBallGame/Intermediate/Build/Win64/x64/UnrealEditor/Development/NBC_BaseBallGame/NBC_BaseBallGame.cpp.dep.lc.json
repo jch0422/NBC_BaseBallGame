@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\nbc_baseballgame\\nbc_baseballgame\\source\\nbc_baseballgame\\nbc_baseballgame.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\nbc_baseballgame\\nbc_baseballgame\\intermediate\\build\\win64\\x64\\nbc_baseballgameeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\git\\nbc_baseballgame\\nbc_baseballgame\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\nbc_baseballgame\\definitions.nbc_baseballgame.h",
+            "d:\\git\\nbc_baseballgame\\nbc_baseballgame\\source\\nbc_baseballgame\\nbc_baseballgame.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
