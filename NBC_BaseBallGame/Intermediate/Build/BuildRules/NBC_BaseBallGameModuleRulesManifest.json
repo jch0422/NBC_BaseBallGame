@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\git\\NBC_BaseBallGame\\NBC_BaseBallGame\\Source\\NBC_BaseBallGame\\NBC_BaseBallGame.Build.cs",
+		"D:\\git\\NBC_BaseBallGame\\NBC_BaseBallGame\\Source\\NBC_BaseBallGame.Target.cs",
+		"D:\\git\\NBC_BaseBallGame\\NBC_BaseBallGame\\Source\\NBC_BaseBallGameEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.4"
+}

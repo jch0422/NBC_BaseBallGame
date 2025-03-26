@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "NBC_BaseBallGame",
+			"Path": "..\\Source\\NBC_BaseBallGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "NBC_BaseBallGameEditor",
+			"Path": "..\\Source\\NBC_BaseBallGameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
