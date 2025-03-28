@@ -33,7 +33,7 @@ void ABaseBallGameStateBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty
     DOREPLIFETIME(ABaseBallGameStateBase, RemainingTurns);
 }
 
-void ABaseBallGameStateBase::TriggerUIUpdate()
+/*void ABaseBallGameStateBase::TriggerUIUpdate()
 {
     for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
     {
@@ -44,6 +44,7 @@ void ABaseBallGameStateBase::TriggerUIUpdate()
             const TArray<FString>& Results = PC->bIsHostPlayer ? HostResults : GuestResults;
 
             PC->Client_UpdateFullUI(Guesses, Results, GameMessage);
+            UE_LOG(LogTemp, Warning, TEXT("Client_UpdateFullUI: %s"), *GetName());
         }
     }
-}
+}*/

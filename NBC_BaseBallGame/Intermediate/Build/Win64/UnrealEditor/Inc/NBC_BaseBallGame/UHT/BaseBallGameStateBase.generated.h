@@ -14,10 +14,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define NBC_BASEBALLGAME_BaseBallGameStateBase_generated_h
 
-#define FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execTriggerUIUpdate);
-
-
 #define FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseBallGameStateBase(); \
@@ -63,7 +59,6 @@ public: \
 #define FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_10_INCLASS_NO_PURE_DECLS \
 	FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_10_ENHANCED_CONSTRUCTORS \
 private: \

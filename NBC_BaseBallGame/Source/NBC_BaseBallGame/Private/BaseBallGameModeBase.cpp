@@ -86,6 +86,9 @@ void ABaseBallGameModeBase::ProcessPlayerGuess(const FString& Guess, bool bIsHos
     CalculateStrikeAndBall(FCString::Atoi(*Guess), Strike, Ball, Out);
     FString Result = FString::Printf(TEXT("%dS%dB%dO"), Strike, Ball, Out);
 
+    UE_LOG(LogTemp, Warning, TEXT("good Guess"));
+    UE_LOG(LogTemp, Warning, TEXT("Guess: %s | Result: %s | %dS %dB %dO"), *Guess, *Result, Strike, Ball, Out);
+
     if (bIsHost)
     {
         GS->HostGuesses.Add(Guess);
@@ -118,7 +121,18 @@ void ABaseBallGameModeBase::ProcessPlayerGuess(const FString& Guess, bool bIsHos
         GS->bIsHostTurn = !GS->bIsHostTurn;
     }
 
-    GS->TriggerUIUpdate();
+    for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
+    {
+        ABaseBallPlayerController* PC = Cast<ABaseBallPlayerController>(*It);
+        if (PC)
+        {
+            const TArray<FString>& Guesses = PC->bIsHostPlayer ? GS->HostGuesses : GS->GuestGuesses;
+            const TArray<FString>& Results = PC->bIsHostPlayer ? GS->HostResults : GS->GuestResults;
+
+            PC->Client_UpdateFullUI(Guesses, Results, GS->GameMessage);
+            UE_LOG(LogTemp, Warning, TEXT("Client_UpdateFullUI Called for: %s"), *PC->GetName());
+        }
+    }
 }
 
 

@@ -56,8 +56,8 @@ public:
     UPROPERTY(Replicated)
     TArray<FString> GuestResults;
 
-    UFUNCTION(BlueprintCallable)
-    void TriggerUIUpdate();
+    //UFUNCTION(BlueprintCallable)
+    //void TriggerUIUpdate();
 
 protected:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

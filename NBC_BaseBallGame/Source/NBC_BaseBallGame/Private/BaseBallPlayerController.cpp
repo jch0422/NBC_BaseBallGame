@@ -18,6 +18,7 @@ void ABaseBallPlayerController::BeginPlay()
         if (BaseballGameUI)
         {
             BaseballGameUI->AddToViewport();
+            UE_LOG(LogTemp, Warning, TEXT("UI Created and Added to Viewport"));
         }
     }
 }
@@ -64,6 +65,7 @@ void ABaseBallPlayerController::Server_ProcessGuess_Implementation(const FString
     ABaseBallGameModeBase* GameMode = Cast<ABaseBallGameModeBase>(GetWorld()->GetAuthGameMode());
     if (GameMode)
     {
+        UE_LOG(LogTemp, Warning, TEXT("good gamemode"));
         GameMode->ProcessPlayerGuess(Guess, bIsHostPlayer);
     }
 }
@@ -85,7 +87,7 @@ void ABaseBallPlayerController::Client_UpdateFullUI_Implementation(const TArray<
         FUpdateLogParams Params;
         Params.Guesses = Guesses;
         Params.Results = Results;
-
+        UE_LOG(LogTemp, Warning, TEXT("ProcessEvent"));
         BaseballGameUI->ProcessEvent(BaseballGameUI->FindFunction(FunctionName), &Params);
     }
 }

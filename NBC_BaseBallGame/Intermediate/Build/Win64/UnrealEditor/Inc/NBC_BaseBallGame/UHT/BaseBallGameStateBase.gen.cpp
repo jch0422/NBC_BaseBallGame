@@ -16,43 +16,9 @@ NBC_BASEBALLGAME_API UClass* Z_Construct_UClass_ABaseBallGameStateBase_NoRegiste
 UPackage* Z_Construct_UPackage__Script_NBC_BaseBallGame();
 // End Cross Module References
 
-// Begin Class ABaseBallGameStateBase Function TriggerUIUpdate
-struct Z_Construct_UFunction_ABaseBallGameStateBase_TriggerUIUpdate_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/BaseBallGameStateBase.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseBallGameStateBase_TriggerUIUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseBallGameStateBase, nullptr, "TriggerUIUpdate", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseBallGameStateBase_TriggerUIUpdate_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseBallGameStateBase_TriggerUIUpdate_Statics::Function_MetaDataParams) };
-UFunction* Z_Construct_UFunction_ABaseBallGameStateBase_TriggerUIUpdate()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseBallGameStateBase_TriggerUIUpdate_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(ABaseBallGameStateBase::execTriggerUIUpdate)
-{
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	P_THIS->TriggerUIUpdate();
-	P_NATIVE_END;
-}
-// End Class ABaseBallGameStateBase Function TriggerUIUpdate
-
 // Begin Class ABaseBallGameStateBase
 void ABaseBallGameStateBase::StaticRegisterNativesABaseBallGameStateBase()
 {
-	UClass* Class = ABaseBallGameStateBase::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "TriggerUIUpdate", &ABaseBallGameStateBase::execTriggerUIUpdate },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ABaseBallGameStateBase);
 UClass* Z_Construct_UClass_ABaseBallGameStateBase_NoRegister()
@@ -145,10 +111,6 @@ struct Z_Construct_UClass_ABaseBallGameStateBase_Statics
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_GuestResults;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
-	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABaseBallGameStateBase_TriggerUIUpdate, "TriggerUIUpdate" }, // 2769313504
-	};
-	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseBallGameStateBase>::IsAbstract,
 	};
@@ -217,11 +179,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ABaseBallGameStateBase_
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	FuncInfo,
+	nullptr,
 	Z_Construct_UClass_ABaseBallGameStateBase_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	UE_ARRAY_COUNT(FuncInfo),
+	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_ABaseBallGameStateBase_Statics::PropPointers),
 	0,
 	0x009002A4u,
@@ -282,10 +244,10 @@ ABaseBallGameStateBase::~ABaseBallGameStateBase() {}
 struct Z_CompiledInDeferFile_FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseBallGameStateBase, ABaseBallGameStateBase::StaticClass, TEXT("ABaseBallGameStateBase"), &Z_Registration_Info_UClass_ABaseBallGameStateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseBallGameStateBase), 731730462U) },
+		{ Z_Construct_UClass_ABaseBallGameStateBase, ABaseBallGameStateBase::StaticClass, TEXT("ABaseBallGameStateBase"), &Z_Registration_Info_UClass_ABaseBallGameStateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseBallGameStateBase), 3293894311U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_1114195297(TEXT("/Script/NBC_BaseBallGame"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_3568001289(TEXT("/Script/NBC_BaseBallGame"),
 	Z_CompiledInDeferFile_FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NBC_BaseBallGame_Source_NBC_BaseBallGame_Public_BaseBallGameStateBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
